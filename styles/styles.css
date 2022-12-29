@@ -26,4 +26,36 @@ a {
 
 hr {
   border: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  background-color: red;
+}
+
+nav {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+nav ul li {
+  margin: 0.5em;
+  padding: 1em;
+}
+nav ul li a {
+  color: palevioletred;
 }/*# sourceMappingURL=styles.css.map */
