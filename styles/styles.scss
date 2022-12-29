@@ -2,33 +2,54 @@
 
 header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2rem;
-    align-items: center;
+    flex-direction: column;
+    background-color: gray;
+
+    .prologue {
+        display: flex;
+        flex-direction: row;
+
+
+        img {
+            height: 16rem;
+            padding: 2em;
+        }
+    }
 }
+
 
 .logo {
     height: 60px;
     width: 60px;
-    background-color: red;
+    background-color: antiquewhite;
 }
 
 nav {
     display: flex;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgb(147, 147, 147);
 
-    ul{ 
+
+
+    ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        
 
-        li{
-            margin: 0.5em;
-            padding: 1em;
+
+
+        li {
+            margin: 0.75rem;
+            padding: 0.75em 2em;
+            background-color: beige;
+            border-radius: 15px;
+
+            &:hover {
+                background-color: rgb(206, 250, 235);
+            }
 
             a {
                 color: palevioletred;
