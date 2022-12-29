@@ -29,8 +29,9 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem;
-    background-color: rgb(147, 147, 147);
+    background-color: #5b6589;
 
 
 
@@ -42,17 +43,17 @@ nav {
 
 
         li {
-            margin: 0.75rem;
-            padding: 0.75em 2em;
-            background-color: beige;
-            border-radius: 15px;
-
-            &:hover {
-                background-color: rgb(206, 250, 235);
-            }
 
             a {
-                color: palevioletred;
+                color: #5b6589;
+                margin: 0.75rem;
+                padding: 0.75em 2em;
+                background-color: #bccfd8;
+                border-radius: 15px;
+
+                &:hover {
+                    background-color: #d58482;
+                }
             }
         }
     }
