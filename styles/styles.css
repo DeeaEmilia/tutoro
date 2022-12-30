@@ -99,13 +99,15 @@ nav ul li a:hover {
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
 }
 main section {
-  background-color: lavender;
   max-width: 75ch;
   padding: 2em;
-}
-main section:nth-child(2n) {
-  background-color: rgb(230, 255, 117);
+  margin: 2em;
+  border-inline-start: 4px solid;
+  border-block-start: 4px solid;
+  border-image-source: radial-gradient(circle at top left, limegreen, transparent 70%);
+  border-image-slice: 1;
 }/*# sourceMappingURL=styles.css.map */
