@@ -31,22 +31,20 @@ hr {
 header {
   display: flex;
   flex-direction: column;
-  background-color: gray;
-}
-header .prologue {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-header .prologue img {
-  height: 16rem;
-  padding: 2em;
+  background-color: #519069;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 901;
+  transition: background-color 0.15s linear;
+  -webkit-font-smoothing: antialiased;
 }
 
 .logo {
   height: 60px;
   width: 60px;
   background-color: antiquewhite;
+  margin: 1rem;
 }
 
 nav {
@@ -55,26 +53,48 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  background-color: #5b6589;
+  padding: 0.2rem;
+  position: -webkit-sticky;
+  position: sticky;
 }
 nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-nav ul li {
-  padding: 1em 0;
-}
 nav ul li a {
-  color: #5b6589;
-  margin: 0.75rem;
-  padding: 0.75em 2em;
-  background-color: #bccfd8;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 0;
+  margin: 1rem 0.3rem;
+  text-decoration: none;
   border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+  justify-content: center;
 }
 nav ul li a:hover {
-  background-color: #d58482;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #f4ebdc, 0 0 30px #f4ebdc;
+}
+
+.prologue {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #519069;
+}
+.prologue img {
+  height: 16rem;
+  padding: 2em;
 }
 
 main {
