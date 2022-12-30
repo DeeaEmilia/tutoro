@@ -1,9 +1,15 @@
 @import 'base';
 
+body {
+    background-color: #519069;
+}
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     background-color: #519069;
     position: -webkit-sticky;
     position: sticky;
@@ -22,14 +28,7 @@ header {
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.2rem;
-    position: -webkit-sticky;
-    position: sticky;
+    padding: 0.5rem;
 
     ul {
         display: flex;
@@ -37,7 +36,7 @@ nav {
         flex-wrap: wrap;
 
         li {
-            
+
             a {
                 display: inline-block;
                 padding: 1rem 1.5rem;
