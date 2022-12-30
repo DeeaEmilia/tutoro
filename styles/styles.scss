@@ -8,6 +8,7 @@ header {
     .prologue {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
 
 
         img {
@@ -43,7 +44,7 @@ nav {
 
 
         li {
-
+            padding: 1em 0;
             a {
                 color: #5b6589;
                 margin: 0.75rem;
@@ -55,6 +56,19 @@ nav {
                     background-color: #d58482;
                 }
             }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    section {
+        background-color: lavender;
+        max-width: 75ch;
+        padding: 2em;
+        &:nth-child(2n) {
+            background-color: rgb(230, 255, 117);
         }
     }
 }

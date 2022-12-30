@@ -36,6 +36,7 @@ header {
 header .prologue {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 header .prologue img {
   height: 16rem;
@@ -62,6 +63,9 @@ nav ul {
   flex-direction: row;
   flex-wrap: wrap;
 }
+nav ul li {
+  padding: 1em 0;
+}
 nav ul li a {
   color: #5b6589;
   margin: 0.75rem;
@@ -71,4 +75,17 @@ nav ul li a {
 }
 nav ul li a:hover {
   background-color: #d58482;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main section {
+  background-color: lavender;
+  max-width: 75ch;
+  padding: 2em;
+}
+main section:nth-child(2n) {
+  background-color: rgb(230, 255, 117);
 }/*# sourceMappingURL=styles.css.map */
