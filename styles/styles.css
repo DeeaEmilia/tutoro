@@ -55,7 +55,7 @@ header {
 }
 
 nav {
-  padding: 0.5rem;
+  padding: 20px;
 }
 nav ul {
   display: flex;
