@@ -38,3 +38,13 @@ button {
     margin: 0;
     text-decoration: none;
 }
+
+.sr-only {
+    display: none;
+  }
+  
+  .flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+  }
+  

@@ -72,11 +72,11 @@ body {
   }
 }
 
-.sr-only {
-  display: none;
+@media (min-width: 35em) {
+    .primary-navigation {
+        --gap: clamp(1.5rem, 5vw, 5rem);
+        padding-block: 2rem;
+        padding-inline: clamp(3rem, 5vw, 10rem);
+    }
 }
 
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
-}

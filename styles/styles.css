@@ -37,6 +37,15 @@ button {
   text-decoration: none;
 }
 
+.sr-only {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
 body {
   background-color: #363636;
   background-image: url("../assets/sky.webp");
@@ -103,11 +112,10 @@ body {
     background-image: url("../assets/closed.svg");
   }
 }
-.sr-only {
-  display: none;
-}
-
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
+@media (min-width: 35em) {
+  .primary-navigation {
+    --gap: clamp(1.5rem, 5vw, 5rem);
+    padding-block: 2rem;
+    padding-inline: clamp(3rem, 5vw, 10rem);
+  }
 }/*# sourceMappingURL=styles.css.map */
