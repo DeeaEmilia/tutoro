@@ -15,11 +15,13 @@ html {
 }
 body {
     font-family: 'Raleway';
+    overflow-x: hidden;
 }
 
 ul {
-    padding: 0;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -30,3 +32,9 @@ hr {
     border: 0;
 }
 
+button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+}
