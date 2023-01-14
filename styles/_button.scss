@@ -1,3 +1,23 @@
+.mobile-nav-toggle {
+    display: none;
+}
+
+.primary-navigation {
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    a {
+        color: #4ECDC4;
+
+        &:hover {
+            color: #1d837c;
+        }
+    }
+}
+.line {
+    border-radius: 10%;
+}
 .btn {
     background-color: rgb(171, 181, 181);
     padding: 0.5em 0.2em;

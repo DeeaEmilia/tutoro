@@ -12,3 +12,5 @@ navToggle.addEventListener("click", () => {
   }
   console.log(visibility);
 });
+
+
