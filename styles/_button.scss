@@ -1,0 +1,20 @@
+.btn {
+    background-color: rgb(171, 181, 181);
+    padding: 0.5em 0.2em;
+    margin: 0.25em;
+    border-radius: 0.75em;
+    width: 8em;
+    font-size: 1.5rem;
+}
+
+.info-btn {
+    background-color: #FFE66D;
+}
+
+.contact-btn {
+    background-color: #4ECDC4;
+}
+.btn-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}

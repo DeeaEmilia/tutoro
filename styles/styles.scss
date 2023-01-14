@@ -1,8 +1,13 @@
 @import "base";
+@import "button";
 
 body {
-  background-color: #363636;
-  background-image: url("../assets/sky.webp");
+  background-color: #dedede;
+  background-image: url("../assets/blur-abstract-bokeh-festive-light-background-banner-backdrop-wallpaper.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .primary-header {
@@ -24,10 +29,12 @@ body {
 
 .primary-navigation {
   list-style: none;
-  background-color: hsl(0 0% 0% / 0.75);
+  background-color: hsl(0 0% 100% / 0.75);
+  font-weight: 700;
+  font-size: 1.5rem;
 
   a {
-    color: #ffffff;
+    color: #4ECDC4;
   }
 }
 
@@ -38,45 +45,76 @@ body {
   }
 }
 
-@media (max-width: 35em) {
-  .primary-navigation {
-    --gap: 2em;
-    position: fixed;
-    inset: 0 0 0 30%;
+.hero-section { 
     flex-direction: column;
-    padding: min(30vh, 10rem) 2em;
-    background-color: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(1rem);
-    transform: translateX(100%);
-    transition: transform 350ms ease-out;
-
-    &[data-visible="true"] {
-      transform: translateX(0%);
-    }
-  }
-
-  .mobile-nav-toggle {
-    display: block;
-    position: absolute;
-    z-index: 9999;
-    background-color: transparent;
-    background-image: url("../assets/menu.svg");
-    background-repeat: no-repeat;
-    width: 2rem;
-    aspect-ratio: 1;
-    top: 2rem;
-    right: 2rem;
-    &[aria-expanded="true"] {
-      background-image: url("../assets/closed.svg");
-    }
-  }
+    align-items: center;
+    padding: 3em 0em;
 }
 
-@media (min-width: 35em) {
+h1 {
+    font-family: 'Gochi', sans-serif;
+    text-transform: uppercase
+}
+
+h2 {
+    text-transform: uppercase
+}
+
+
+
+@media (max-width: 35em) {
     .primary-navigation {
-        --gap: clamp(1.5rem, 5vw, 5rem);
-        padding-block: 2rem;
-        padding-inline: clamp(3rem, 5vw, 10rem);
+      --gap: 2em;
+      position: fixed;
+      inset: 0 0 0 30%;
+      flex-direction: column;
+      padding: min(30vh, 10rem) 2em;
+      background-color: rgba(15, 15, 15, 0.75);
+      backdrop-filter: blur(1rem);
+      transform: translateX(100%);
+      transition: transform 350ms ease-out;
+  
+      &[data-visible="true"] {
+        transform: translateX(0%);
+      }
     }
-}
+  
+    .mobile-nav-toggle {
+      display: block;
+      position: absolute;
+      z-index: 9999;
+      background-color: transparent;
+      background-image: url("../assets/menu.svg");
+      background-repeat: no-repeat;
+      width: 2rem;
+      aspect-ratio: 1;
+      top: 2rem;
+      right: 2rem;
+      &[aria-expanded="true"] {
+        background-image: url("../assets/closed.svg");
+      }
+    }
 
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: clamp(0.5rem, 5vw, 1.5rem);
+    }
+  }
+  
+  @media (min-width: 35em) {
+    .primary-navigation {
+      --gap: clamp(1.5rem, 5vw, 5rem);
+      padding-block: 2rem;
+      padding-inline: clamp(3rem, 5vw, 10rem);
+    }
+
+    h1 {
+        font-size: clamp(4rem, 8vw, 20rem);
+    }
+    h2 {
+        font-size: clamp(1.5rem, 2vw, 10rem);
+    }
+  }
+  
