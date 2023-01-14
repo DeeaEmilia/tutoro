@@ -5,15 +5,30 @@
     border-radius: 0.75em;
     width: 8em;
     font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .info-btn {
     background-color: #FFE66D;
+
+    &:hover {
+        background-color: #f7d52b;
+    }
 }
 
 .contact-btn {
     background-color: #4ECDC4;
+
+    &:hover {
+        background-color: #0cb3a7;
+    }
 }
+
 .btn-container {
     flex-wrap: wrap;
     justify-content: center;

@@ -50,6 +50,11 @@ button {
   gap: var(--gap, 1rem);
 }
 
+.grid-two-columns {
+  display: grid;
+  grid-gap: 2em;
+}
+
 .btn {
   background-color: rgb(171, 181, 181);
   padding: 0.5em 0.2em;
@@ -57,14 +62,25 @@ button {
   border-radius: 0.75em;
   width: 8em;
   font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn:hover {
+  cursor: pointer;
 }
 
 .info-btn {
   background-color: #FFE66D;
 }
+.info-btn:hover {
+  background-color: #f7d52b;
+}
 
 .contact-btn {
   background-color: #4ECDC4;
+}
+.contact-btn:hover {
+  background-color: #0cb3a7;
 }
 
 .btn-container {
@@ -79,6 +95,10 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+main {
+  padding: 1rem 2rem;
 }
 
 .primary-header {
@@ -99,7 +119,6 @@ body {
 
 .primary-navigation {
   list-style: none;
-  background-color: hsla(0deg, 0%, 100%, 0.75);
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -107,25 +126,51 @@ body {
   color: #4ECDC4;
 }
 
-@supports (backdrop-filter: blur(1rem)) {
-  .primary-navigation {
-    background-color: hsla(0deg, 0%, 100%, 0.1);
-    backdrop-filter: blur(0.75rem);
-  }
-}
 .hero-section {
   flex-direction: column;
   align-items: center;
   padding: 3em 0em;
 }
+.hero-section h2 {
+  text-transform: uppercase;
+}
+.hero-section img {
+  padding: 2rem 0rem;
+  height: 40vh;
+  width: 100vw;
+}
 
 h1 {
   font-family: "Gochi", sans-serif;
   text-transform: uppercase;
+  font-size: 4rem;
 }
 
 h2 {
-  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.section {
+  padding: 2rem 0rem;
+}
+.section .female {
+  flex-direction: row;
+  border-radius: 73% 27% 55% 45%/45% 35% 65% 55%;
+  background-color: rgba(78, 205, 197, 0.3568627451);
+}
+.section .male {
+  flex-direction: row;
+  border-radius: 73% 27% 55% 45%/45% 35% 65% 55%;
+  background-color: rgba(255, 231, 109, 0.337254902);
+}
+
+.first-section {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.first-section p {
+  padding: 3rem;
 }
 
 @media (max-width: 35em) {
@@ -158,14 +203,20 @@ h2 {
   .mobile-nav-toggle[aria-expanded=true] {
     background-image: url("../assets/closed.svg");
   }
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: clamp(0.5rem, 5vw, 1.5rem);
+  .grid-two-columns {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
-@media (min-width: 35em) {
+@media (min-width: 35em) and (max-width: 55em) {
+  h1 {
+    font-size: clamp(4rem, 8vw, 20rem);
+  }
+  h2 {
+    font-size: clamp(2rem, 2vw, 5rem);
+  }
+}
+@media (min-width: 55em) {
   .primary-navigation {
     --gap: clamp(1.5rem, 5vw, 5rem);
     padding-block: 2rem;
@@ -175,6 +226,17 @@ h2 {
     font-size: clamp(4rem, 8vw, 20rem);
   }
   h2 {
-    font-size: clamp(1.5rem, 2vw, 10rem);
+    font-size: clamp(2rem, 2vw, 5rem);
+  }
+  .grid-two-columns {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .first-section:nth-child(odd) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .first-section:nth-child(even) {
+    grid-column-start: 4;
+    grid-column-end: 6;
   }
 }/*# sourceMappingURL=styles.css.map */

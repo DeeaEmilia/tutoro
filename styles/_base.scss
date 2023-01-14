@@ -51,3 +51,8 @@ button {
     gap: var(--gap, 1rem);
   }
   
+  .grid-two-columns {
+    display: grid;
+    grid-gap: 2em;
+    
+  }
