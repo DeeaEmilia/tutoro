@@ -185,7 +185,6 @@ h2 {
 }
 .first-section .paragraph p {
   padding: 1em;
-  font-weight: 600;
 }
 
 .learning-container {
@@ -366,8 +365,8 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
   }
   .learning-container .learning-card .image-card {
-    width: 27rem;
-    height: 15rem;
+    width: 25rem;
+    height: 10rem;
   }
   .learning-container .learning-card h3 {
     font-size: 1.75rem;

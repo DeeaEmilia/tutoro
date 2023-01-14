@@ -89,7 +89,7 @@ h2 {
 
         p {
             padding: 1em;
-            font-weight: 600;
+  
         }
     }
 }
@@ -232,15 +232,9 @@ h2 {
                     x 300ms ease-in 300ms,
                     rotate 300ms ease-in,
                     opacity 0ms;
-     
             }
-
         }
-
-        // &[aria-expanded="true"] {
-        // }
     }
-
     .grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -325,9 +319,10 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
 
         .learning-card {
+
             .image-card {
-                width: 27rem;
-                height: 15rem;
+                width: 25rem;
+                height: 10rem;
             }
 
             h3 {
