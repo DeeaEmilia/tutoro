@@ -17,7 +17,7 @@
 
     .mobile-nav-toggle {
         display: block;
-        position: fixed;
+        position: absolute;
         z-index: 9999;
         background-color: transparent;
         // background-image: url("../assets/menu.svg");
@@ -38,7 +38,7 @@
         
 
         &[aria-expanded="true"] {
-        
+        position:fixed;
             .top {
                 y: 45;
                 rotate: 45deg;

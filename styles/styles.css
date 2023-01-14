@@ -125,7 +125,7 @@ button {
   }
   .mobile-nav-toggle {
     display: block;
-    position: fixed;
+    position: absolute;
     z-index: 9999;
     background-color: transparent;
     width: 3rem;
@@ -137,6 +137,9 @@ button {
   .mobile-nav-toggle .line {
     transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
     transform-origin: center;
+  }
+  .mobile-nav-toggle[aria-expanded=true] {
+    position: fixed;
   }
   .mobile-nav-toggle[aria-expanded=true] .top {
     y: 45;
