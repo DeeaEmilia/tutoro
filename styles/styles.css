@@ -50,7 +50,7 @@ button {
   gap: var(--gap, 1rem);
 }
 
-.grid-two-columns {
+.grid {
   display: grid;
   grid-gap: 2em;
 }
@@ -97,10 +97,6 @@ body {
   background-repeat: no-repeat;
 }
 
-main {
-  padding: 1rem 2rem;
-}
-
 .primary-header {
   align-items: center;
   justify-content: space-between;
@@ -129,7 +125,7 @@ main {
 .hero-section {
   flex-direction: column;
   align-items: center;
-  padding: 3em 0em;
+  padding: 2em 0em;
 }
 .hero-section h2 {
   text-transform: uppercase;
@@ -143,15 +139,19 @@ main {
 h1 {
   font-family: "Gochi", sans-serif;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 3rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .section {
   padding: 2rem 0rem;
+}
+.section .first-section {
+  margin: 2rem 2rem;
 }
 .section .female {
   flex-direction: row;
@@ -170,7 +170,89 @@ h2 {
   justify-content: center;
 }
 .first-section p {
-  padding: 3rem;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+}
+.first-section .paragraph {
+  padding: 1em 2em;
+}
+.first-section .paragraph p {
+  padding: 1em;
+  font-weight: 600;
+}
+
+.learning-container {
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  margin: 3rem 1rem;
+}
+.learning-container .learning-card {
+  align-items: center;
+  justify-items: center;
+  padding: 5em 0em 0em 0em;
+  border-radius: 1rem;
+}
+.learning-container .learning-card .image-card {
+  width: 20rem;
+  height: 8rem;
+  justify-content: center;
+}
+.learning-container .learning-card h3 {
+  font-family: "Gochi", sans-serif;
+  font-size: 1.5rem;
+  padding: 2rem 0rem;
+  width: 100%;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  text-align: center;
+}
+
+#reading-card {
+  background-color: rgba(78, 205, 197, 0.2588235294);
+}
+
+#reading-text {
+  background-color: #4ECDC4;
+}
+
+#writing-card {
+  background-color: rgba(255, 230, 109, 0.2588235294);
+}
+
+#writing-text {
+  background-color: #FFE66D;
+}
+
+#listening-card {
+  background-color: rgba(255, 107, 107, 0.2588235294);
+}
+
+#listening-text {
+  background-color: #FF6B6B;
+}
+
+#conversation-card {
+  background-color: rgba(210, 82, 255, 0.2588235294);
+}
+
+#conversation-text {
+  background-color: #D252FF;
+}
+
+#grammar-card {
+  background-color: rgba(28, 181, 25, 0.2588235294);
+}
+
+#grammar-text {
+  background-color: #1cb519;
+}
+
+#vocabulary-card {
+  background-color: rgba(255, 161, 73, 0.2588235294);
+}
+
+#vocabulary-text {
+  background-color: #FFA149;
 }
 
 @media (max-width: 35em) {
@@ -203,20 +285,33 @@ h2 {
   .mobile-nav-toggle[aria-expanded=true] {
     background-image: url("../assets/closed.svg");
   }
-  .grid-two-columns {
+  .grid {
     display: grid;
     grid-template-columns: 1fr;
   }
 }
 @media (min-width: 35em) and (max-width: 55em) {
-  h1 {
-    font-size: clamp(4rem, 8vw, 20rem);
+  main {
+    padding: 1rem 2rem;
   }
-  h2 {
-    font-size: clamp(2rem, 2vw, 5rem);
+  h1 {
+    font-size: clamp(4em, 8vw, 20em);
+  }
+  .first-section p {
+    padding: 6rem;
+  }
+  .learning-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .learning-container .learning-card .image-card {
+    width: 27rem;
+    height: 15rem;
   }
 }
 @media (min-width: 55em) {
+  main {
+    padding: 1rem 2rem;
+  }
   .primary-navigation {
     --gap: clamp(1.5rem, 5vw, 5rem);
     padding-block: 2rem;
@@ -228,8 +323,11 @@ h2 {
   h2 {
     font-size: clamp(2rem, 2vw, 5rem);
   }
-  .grid-two-columns {
+  .section {
     grid-template-columns: repeat(6, 1fr);
+  }
+  .first-section p {
+    padding: 3rem;
   }
   .first-section:nth-child(odd) {
     grid-column-start: 2;
@@ -238,5 +336,12 @@ h2 {
   .first-section:nth-child(even) {
     grid-column-start: 4;
     grid-column-end: 6;
+  }
+  .learning-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .learning-container .learning-card .image-card {
+    width: 27rem;
+    height: 15rem;
   }
 }/*# sourceMappingURL=styles.css.map */

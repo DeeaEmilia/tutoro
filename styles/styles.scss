@@ -10,10 +10,6 @@ body {
     background-repeat: no-repeat;
 }
 
-main {
-    padding: 1rem 2rem;
-}
-
 .primary-header {
     align-items: center;
     justify-content: space-between;
@@ -51,7 +47,7 @@ main {
 .hero-section {
     flex-direction: column;
     align-items: center;
-    padding: 3em 0em;
+    padding: 2em 0em;
 
     h2 {
         text-transform: uppercase;
@@ -67,16 +63,20 @@ main {
 h1 {
     font-family: 'Gochi', sans-serif;
     text-transform: uppercase;
-    font-size: 4rem;
-
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 3rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .section {
     padding: 2rem 0rem;
+
+    .first-section {
+        margin: 2rem 2rem;
+    }
 
     .female {
         flex-direction: row;
@@ -90,6 +90,7 @@ h2 {
         border-radius: 73% 27% 55% 45% / 45% 35% 65% 55%;
         background-color: #ffe76d56;
     }
+
 }
 
 .first-section {
@@ -98,9 +99,99 @@ h2 {
     justify-content: center;
 
     p {
-        padding: 3rem;
+        padding: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    .paragraph {
+        padding: 1em 2em;
+
+        p {
+            padding: 1em;
+            font-weight: 600;
+        }
     }
 }
+
+.learning-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin: 3rem 1rem;
+
+    .learning-card {
+        align-items: center;
+        justify-items: center;
+        padding: 5em 0em 0em 0em;
+        border-radius: 1rem;
+
+        .image-card {
+            width: 20rem;
+            height: 8rem;
+            justify-content: center;
+        }
+
+        h3 {
+            font-family: 'Gochi', sans-serif;
+            font-size: 1.5rem;
+            padding: 2rem 0rem;
+            width: 100%;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            text-align: center;
+
+        }
+    }
+}
+
+#reading-card {
+    background-color: #4ecdc542;
+}
+
+#reading-text {
+    background-color: #4ECDC4;
+}
+
+#writing-card {
+    background-color: #FFE66D42;
+}
+
+#writing-text {
+    background-color: #FFE66D;
+}
+
+#listening-card {
+    background-color: #FF6B6B42;
+}
+
+#listening-text {
+    background-color: #FF6B6B;
+}
+
+#conversation-card {
+    background-color: #D252FF42;
+}
+
+#conversation-text {
+    background-color: #D252FF;
+}
+
+#grammar-card {
+    background-color: #1cb51942;
+}
+
+#grammar-text {
+    background-color: #1cb519;
+}
+
+#vocabulary-card {
+    background-color: #FFA14942;
+}
+
+#vocabulary-text {
+    background-color: #FFA149;
+}
+
+
 
 @media (max-width: 35em) {
     .primary-navigation {
@@ -136,23 +227,53 @@ h2 {
         }
     }
 
-    .grid-two-columns {
+    .grid {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+
 }
 
 @media (min-width: 35em) and (max-width:55em) {
-    h1 {
-        font-size: clamp(4rem, 8vw, 20rem);
+
+    main {
+        padding: 1rem 2rem;
     }
 
-    h2 {
-        font-size: clamp(2rem, 2vw, 5rem);
+    h1 {
+        font-size: clamp(4em, 8vw, 20em);
+    }
+
+    .first-section {
+
+
+        p {
+            padding: 6rem;
+        }
+    }
+
+    .learning-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        .learning-card {
+
+            .image-card {
+                width: 27rem;
+                height: 15rem;
+            }
+        }
+
+
     }
 }
 
 @media (min-width: 55em) {
+
+    main {
+        padding: 1rem 2rem;
+    }
+
     .primary-navigation {
         --gap: clamp(1.5rem, 5vw, 5rem);
         padding-block: 2rem;
@@ -167,17 +288,35 @@ h2 {
         font-size: clamp(2rem, 2vw, 5rem);
     }
 
-    .grid-two-columns {
+    .section {
         grid-template-columns: repeat(6, 1fr);
+    }
+
+    .first-section {
+        p {
+            padding: 3rem;
+        }
     }
 
     .first-section:nth-child(odd) {
         grid-column-start: 2;
         grid-column-end: 4;
     }
+
     .first-section:nth-child(even) {
         grid-column-start: 4;
         grid-column-end: 6;
     }
-    
+
+    .learning-container {
+        grid-template-columns: repeat(3, 1fr);
+
+        .learning-card {
+
+            .image-card {
+                width: 27rem;
+                height: 15rem;
+            }
+        }
+    }
 }
