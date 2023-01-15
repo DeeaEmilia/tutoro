@@ -45,16 +45,6 @@ button {
   display: none;
 }
 
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
-}
-
-.grid {
-  display: grid;
-  grid-gap: 2em;
-}
-
 .mobile-nav-toggle {
   display: none;
 }
@@ -134,14 +124,6 @@ body {
   align-items: center;
   padding: 2em 0em;
 }
-.hero-section h2 {
-  text-transform: uppercase;
-}
-.hero-section img {
-  padding: 2rem 0rem;
-  height: 40vh;
-  width: 100vw;
-}
 
 h1 {
   font-family: "Gochi", sans-serif;
@@ -157,7 +139,7 @@ h2 {
 .section {
   padding: 2rem 0rem;
 }
-.section .first-section {
+.section .introduction-section {
   margin: 2rem 2rem;
 }
 .section .female {
@@ -171,19 +153,19 @@ h2 {
   background-color: rgba(255, 231, 109, 0.337254902);
 }
 
-.first-section {
+.introduction-section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.first-section p {
+.introduction-section p {
   padding: 1.5rem;
   font-size: 1.25rem;
 }
-.first-section .paragraph {
+.introduction-section .paragraph {
   padding: 1em 2em;
 }
-.first-section .paragraph p {
+.introduction-section .paragraph p {
   padding: 1em;
 }
 
@@ -213,54 +195,6 @@ h2 {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   text-align: center;
-}
-
-#reading-card {
-  background-color: rgba(78, 205, 197, 0.2588235294);
-}
-
-#reading-text {
-  background-color: #4ECDC4;
-}
-
-#writing-card {
-  background-color: rgba(255, 230, 109, 0.2588235294);
-}
-
-#writing-text {
-  background-color: #FFE66D;
-}
-
-#listening-card {
-  background-color: rgba(255, 107, 107, 0.2588235294);
-}
-
-#listening-text {
-  background-color: #FF6B6B;
-}
-
-#conversation-card {
-  background-color: rgba(210, 82, 255, 0.2588235294);
-}
-
-#conversation-text {
-  background-color: #D252FF;
-}
-
-#grammar-card {
-  background-color: rgba(28, 181, 25, 0.2588235294);
-}
-
-#grammar-text {
-  background-color: #1cb519;
-}
-
-#vocabulary-card {
-  background-color: rgba(255, 161, 73, 0.2588235294);
-}
-
-#vocabulary-text {
-  background-color: #FFA149;
 }
 
 @media (max-width: 560px) {
@@ -322,21 +256,21 @@ h2 {
   h1 {
     font-size: clamp(4em, 8vw, 20em);
   }
-  .first-section p {
+  .introduction-section p {
     padding: 6rem;
   }
   .curriculum {
     width: 100vw;
   }
   .learning-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .learning-container .learning-card .image-card {
     width: 27rem;
     height: 15rem;
   }
 }
-@media (min-width: 1285px) {
+@media (min-width: 55em) {
   main {
     padding: 1rem 2rem;
   }
@@ -354,14 +288,14 @@ h2 {
   .section {
     grid-template-columns: repeat(6, 1fr);
   }
-  .first-section p {
+  .introduction-section p {
     padding: 3rem;
   }
-  .first-section:nth-child(odd) {
+  .introduction-section:nth-child(odd) {
     grid-column-start: 2;
     grid-column-end: 4;
   }
-  .first-section:nth-child(even) {
+  .introduction-section:nth-child(even) {
     grid-column-start: 4;
     grid-column-end: 6;
   }

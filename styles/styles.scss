@@ -30,15 +30,6 @@ body {
     align-items: center;
     padding: 2em 0em;
 
-    h2 {
-        text-transform: uppercase;
-    }
-
-    img {
-        padding: 2rem 0rem;
-        height: 40vh;
-        width: 100vw;
-    }
 }
 
 h1 {
@@ -55,7 +46,7 @@ h2 {
 .section {
     padding: 2rem 0rem;
 
-    .first-section {
+    .introduction-section {
         margin: 2rem 2rem;
     }
 
@@ -74,7 +65,7 @@ h2 {
 
 }
 
-.first-section {
+.introduction-section {
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -124,53 +115,6 @@ h2 {
     }
 }
 
-#reading-card {
-    background-color: #4ecdc542;
-}
-
-#reading-text {
-    background-color: #4ECDC4;
-}
-
-#writing-card {
-    background-color: #FFE66D42;
-}
-
-#writing-text {
-    background-color: #FFE66D;
-}
-
-#listening-card {
-    background-color: #FF6B6B42;
-}
-
-#listening-text {
-    background-color: #FF6B6B;
-}
-
-#conversation-card {
-    background-color: #D252FF42;
-}
-
-#conversation-text {
-    background-color: #D252FF;
-}
-
-#grammar-card {
-    background-color: #1cb51942;
-}
-
-#grammar-text {
-    background-color: #1cb519;
-}
-
-#vocabulary-card {
-    background-color: #FFA14942;
-}
-
-#vocabulary-text {
-    background-color: #FFA149;
-}
 
 
 @media (max-width: 560px) {
@@ -253,7 +197,7 @@ h2 {
         font-size: clamp(4em, 8vw, 20em);
     }
 
-    .first-section {
+    .introduction-section {
 
 
         p {
@@ -265,7 +209,7 @@ h2 {
     }
 
     .learning-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
 
         .learning-card {
 
@@ -277,7 +221,7 @@ h2 {
     }
 }
 
-@media (min-width: 1285px) {
+@media (min-width: 55em) {
 
     main {
         padding: 1rem 2rem;
@@ -302,18 +246,18 @@ h2 {
         grid-template-columns: repeat(6, 1fr);
     }
 
-    .first-section {
+    .introduction-section {
         p {
             padding: 3rem;
         }
     }
 
-    .first-section:nth-child(odd) {
+    .introduction-section:nth-child(odd) {
         grid-column-start: 2;
         grid-column-end: 4;
     }
 
-    .first-section:nth-child(even) {
+    .introduction-section:nth-child(even) {
         grid-column-start: 4;
         grid-column-end: 6;
     }

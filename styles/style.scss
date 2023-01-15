@@ -1,0 +1,218 @@
+@import "base";
+@import "button";
+@import "cards";
+
+body {
+    background-color: #dedede;
+    background-image: url("../assets/blur-abstract-bokeh-festive-light-background-banner-backdrop-wallpaper.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+// header
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+// navigation
+.primary-navigation {
+    --gap: 2em;
+    position: fixed;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+    background-color: rgba(98, 98, 98, 0.75);
+    backdrop-filter: blur(1rem);
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+
+    &[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    @media (min-width: 560px) {
+        flex-direction: row;
+        transform: none;
+        backdrop-filter: none;
+        position: sticky;
+        padding: 0 2rem;
+        background-color: transparent;
+    }
+}
+
+.mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    width: 3rem;
+    aspect-ratio: 1;
+    top: 3rem;
+    right: 3rem;
+    fill: #333;
+
+    .line {
+        transition:
+            y 300ms ease-in 300ms,
+            rotate 300ms ease-in,
+            opacity 0ms 300ms;
+        transform-origin: center;
+    }
+
+
+    &[aria-expanded="true"] {
+        position: fixed;
+
+        .top {
+            y: 45;
+            rotate: 45deg;
+        }
+
+        .middle {
+            opacity: 0;
+        }
+
+        .bottom {
+            y: 45;
+            rotate: -45deg;
+        }
+
+        .line {
+
+            transition:
+                x 300ms ease-in 300ms,
+                rotate 300ms ease-in,
+                opacity 0ms;
+        }
+    }
+
+    @media (min-width: 560px) {
+        display: none;
+    }
+}
+
+.logo {
+    margin: 2rem;
+
+    img {
+        height: 4rem;
+    }
+}
+
+// hero section
+
+.hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0em;
+    align-items: center;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    img {
+        padding: 2rem 0rem;
+        height: 40vh;
+        width: 100vw;
+    }
+}
+
+h1 {
+    font-family: 'Gochi', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: clamp(5vh, 8rem, 15vw);
+}
+
+h2 {
+    text-align: center;
+    font-size: clamp(2vh, 2rem, 8vw);
+}
+
+//introduction
+
+.introduction-section {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: 560px) {
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+.paragraph {
+    padding: 1em 2em;
+
+    p {
+        padding: 1em;
+
+    }
+}
+
+//what you'll learn
+.learning-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 3rem 1rem;
+
+    @media (min-width: 1280px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.learning-card {
+    align-items: center;
+    justify-items: center;
+    padding: 5em 0em 0em 0em;
+    border-radius: 1rem;
+    flex-direction: column;
+
+}
+
+.image-card {
+    width: 35vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+    @media (min-width: 560px) {
+        width: 450px;
+        height: 200px;
+    }
+    @media (min-width: 1280px) {
+        width: 450px;
+        height: 200px;
+    }
+}
+
+h3 {
+    font-family: 'Gochi', sans-serif;
+    font-size: 1.5rem;
+    padding: 2rem 0rem;
+    width: 100%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    text-align: center;
+}
+
+
+// pseudo-utility classes
+.grid {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr;
+
+
+
+ 
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
