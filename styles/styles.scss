@@ -98,29 +98,29 @@ h2 {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     margin: 3rem 1rem;
+    
+}
+.learning-card {
+    align-items: center;
+    justify-items: center;
+    padding: 5em 0em 0em 0em;
+    border-radius: 1rem;
 
-    .learning-card {
-        align-items: center;
-        justify-items: center;
-        padding: 5em 0em 0em 0em;
-        border-radius: 1rem;
+    .image-card {
+        width: 20rem;
+        height: 8rem;
+        justify-content: center;
+        padding: 1rem;
+    }
 
-        .image-card {
-            width: 20rem;
-            height: 8rem;
-            justify-content: center;
-            padding: 1rem;
-        }
-
-        h3 {
-            font-family: 'Gochi', sans-serif;
-            font-size: 1.5rem;
-            padding: 2rem 0rem;
-            width: 100%;
-            border-bottom-right-radius: 1rem;
-            border-bottom-left-radius: 1rem;
-            text-align: center;
-        }
+    h3 {
+        font-family: 'Gochi', sans-serif;
+        font-size: 1.5rem;
+        padding: 2rem 0rem;
+        width: 100%;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        text-align: center;
     }
 }
 
@@ -173,7 +173,7 @@ h2 {
 }
 
 
-@media (max-width: 35em) {
+@media (max-width: 560px) {
     .primary-navigation {
         --gap: 2em;
         position: fixed;
@@ -243,7 +243,7 @@ h2 {
 
 }
 
-@media (min-width: 35em) and (max-width:55em) {
+@media (min-width: 560px) and (max-width:1280px) {
 
     main {
         padding: 1rem 2rem;
@@ -260,9 +260,12 @@ h2 {
             padding: 6rem;
         }
     }
+    .curriculum {
+        width: 100vw;
+    }
 
     .learning-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
 
         .learning-card {
 
@@ -274,7 +277,7 @@ h2 {
     }
 }
 
-@media (min-width: 55em) {
+@media (min-width: 1285px) {
 
     main {
         padding: 1rem 2rem;
