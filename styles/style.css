@@ -156,6 +156,7 @@ body {
 }
 
 .primary-header {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -176,6 +177,8 @@ body {
 }
 @media (min-width: 560px) {
   .primary-navigation {
+    display: flex;
+    --gap: 2em;
     flex-direction: row;
     transform: none;
     backdrop-filter: none;
@@ -183,6 +186,10 @@ body {
     padding: 0 2rem;
     background-color: transparent;
   }
+}
+
+nav ul li {
+  margin: 1em;
 }
 
 .mobile-nav-toggle {
@@ -257,6 +264,16 @@ h2 {
   font-size: clamp(2vh, 2rem, 8vw);
 }
 
+.btn-container {
+  display: flex;
+}
+
+.introduction {
+  justify-content: center;
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
 .introduction-section {
   align-items: center;
   flex-direction: column;
@@ -328,9 +345,4 @@ h3 {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: 1fr;
-}
-
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
 }/*# sourceMappingURL=style.css.map */
