@@ -272,6 +272,7 @@ h2 {
   justify-content: center;
   display: flex;
   gap: var(--gap, 1rem);
+  align-items: center;
 }
 
 .introduction-section {
@@ -293,17 +294,20 @@ h2 {
 }
 
 .learning-container {
+  display: grid;
+  grid-gap: 2em;
   grid-template-columns: 1fr;
   justify-items: center;
   margin: 3rem 1rem;
 }
 @media (min-width: 1280px) {
   .learning-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 .learning-card {
+  display: flex;
   align-items: center;
   justify-items: center;
   padding: 5em 0em 0em 0em;
@@ -314,9 +318,8 @@ h2 {
 .image-card {
   width: 35vw;
   height: 40vh;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 3rem;
 }
 @media (min-width: 560px) {
   .image-card {
@@ -339,10 +342,4 @@ h3 {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
   text-align: center;
-}
-
-.grid {
-  display: grid;
-  grid-gap: 2em;
-  grid-template-columns: 1fr;
 }/*# sourceMappingURL=style.css.map */
