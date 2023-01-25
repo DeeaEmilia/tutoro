@@ -34,17 +34,18 @@ body {
         transform: translateX(0%);
     }
 
-    @media (min-width: 560px) {
+    @media (min-width: 780px) {
+        position: inherit;
+        justify-content: flex-end;
         display: flex;
-        --gap: 2em;
         flex-direction: row;
         transform: none;
         backdrop-filter: none;
-        position: sticky;
         padding: 0 2rem;
         background-color: transparent;
-    }
+    } 
 }
+
 nav {
     ul {
         li {
@@ -52,6 +53,7 @@ nav {
         }
     }
 }
+
 .mobile-nav-toggle {
     display: block;
     position: absolute;
@@ -98,7 +100,7 @@ nav {
         }
     }
 
-    @media (min-width: 560px) {
+    @media (min-width: 780px) {
         display: none;
     }
 }
@@ -141,9 +143,11 @@ h2 {
     text-align: center;
     font-size: clamp(2vh, 2rem, 8vw);
 }
+
 .btn-container {
     display: flex;
 }
+
 //introduction
 .introduction {
     justify-content: center;
@@ -151,10 +155,12 @@ h2 {
     gap: var(--gap, 1rem);
     align-items: center;
 }
+
 .introduction-section {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
     @media (min-width: 560px) {
         grid-template-columns: 2fr 2fr;
     }
@@ -193,16 +199,21 @@ h2 {
 }
 
 .image-card {
-    width: 35vw;
-    height: 40vh;
+    width: 450px;
+    height: 200px;
     display: flex;
     justify-content: center;
-    
+
+    img {
+        height: 100%;
+        padding-bottom: 5%;
+    }
 
     @media (min-width: 560px) {
         width: 450px;
         height: 200px;
     }
+
     @media (min-width: 1280px) {
         width: 450px;
         height: 200px;
@@ -218,5 +229,3 @@ h3 {
     border-bottom-left-radius: 1rem;
     text-align: center;
 }
-
-

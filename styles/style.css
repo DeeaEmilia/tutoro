@@ -175,14 +175,14 @@ body {
 .primary-navigation[data-visible=true] {
   transform: translateX(0%);
 }
-@media (min-width: 560px) {
+@media (min-width: 780px) {
   .primary-navigation {
+    position: inherit;
+    justify-content: flex-end;
     display: flex;
-    --gap: 2em;
     flex-direction: row;
     transform: none;
     backdrop-filter: none;
-    position: sticky;
     padding: 0 2rem;
     background-color: transparent;
   }
@@ -224,7 +224,7 @@ nav ul li {
 .mobile-nav-toggle[aria-expanded=true] .line {
   transition: x 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms;
 }
-@media (min-width: 560px) {
+@media (min-width: 780px) {
   .mobile-nav-toggle {
     display: none;
   }
@@ -316,10 +316,14 @@ h2 {
 }
 
 .image-card {
-  width: 35vw;
-  height: 40vh;
+  width: 450px;
+  height: 200px;
   display: flex;
   justify-content: center;
+}
+.image-card img {
+  height: 100%;
+  padding-bottom: 5%;
 }
 @media (min-width: 560px) {
   .image-card {
