@@ -300,6 +300,11 @@ h2 {
   justify-items: center;
   margin: 3rem 1rem;
 }
+@media (min-width: 920px) {
+  .learning-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (min-width: 1280px) {
   .learning-container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -316,7 +321,7 @@ h2 {
 }
 
 .image-card {
-  width: 450px;
+  width: 90vw;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -324,17 +329,26 @@ h2 {
 .image-card img {
   height: 100%;
   padding-bottom: 5%;
+  overflow: hidden;
 }
-@media (min-width: 560px) {
-  .image-card {
-    width: 450px;
-    height: 200px;
+@media (min-width: 920px) {
+  .image-card img {
+    max-width: 43vw;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1290px) {
+  .image-card img {
+    max-width: 28vw;
+  }
+}
+@media (min-width: 920px) {
   .image-card {
-    width: 450px;
-    height: 200px;
+    width: 45vw;
+  }
+}
+@media (min-width: 1290px) {
+  .image-card {
+    width: 30vw;
   }
 }
 
