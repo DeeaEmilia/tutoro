@@ -628,6 +628,15 @@ h2 {
   padding: 1em;
 }
 
+.curriculum {
+  padding: 4rem 0rem;
+}
+@media (min-width: 1500px) {
+  .curriculum {
+    padding: 10rem 2rem;
+  }
+}
+
 .learning-container {
   display: grid;
   grid-gap: 2em;
