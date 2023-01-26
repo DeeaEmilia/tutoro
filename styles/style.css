@@ -245,9 +245,11 @@ button {
 .modal-content {
   display: flex;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 1rem;
-  margin: auto;
   padding: 15px;
   width: 90vw;
   border: 1px solid #888;
@@ -283,7 +285,6 @@ button {
 @media (min-width: 500px) {
   .modal-content h4 {
     display: inherit;
-    padding: 2rem;
   }
 }
 .modal-content ul {
@@ -398,11 +399,9 @@ button {
 
 @keyframes animatetop {
   from {
-    top: 300px;
     opacity: 0;
   }
   to {
-    top: 0;
     opacity: 1;
   }
 }
