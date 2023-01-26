@@ -1,47 +1,143 @@
 #reading-card {
-    background-color: #4ecdc542;
+    background-color: hsla(176, 56%, 55%, 0.259);
 }
 
 #reading-text {
-    background-color: #4ECDC4;
+    background-color: hsl(176, 56%, 55%);
+
+    .see-more {
+        display: none;
+    }
+
+    &:hover {
+        background-color: hsl(176, 56%, 45%);
+
+        .see-more {
+            display: inherit;
+        }
+
+        .card-title {
+            display: none;
+        }
+    }
 }
 
 #writing-card {
-    background-color: #FFE66D42;
+    background-color: hsla(50, 100%, 71%, 0.259);
 }
 
 #writing-text {
-    background-color: #FFE66D;
+    background-color: hsl(50, 100%, 71%);
+
+    .see-more {
+        display: none;
+    }
+
+    &:hover {
+        background-color: hsl(50, 100%, 51%);
+
+        .see-more {
+            display: inherit;
+        }
+
+        .card-title {
+            display: none;
+        }
+    }
 }
 
 #listening-card {
-    background-color: #FF6B6B42;
+    background-color: hsla(0, 100%, 71%, 0.259);
 }
 
 #listening-text {
-    background-color: #FF6B6B;
+    background-color: hsl(0, 100%, 71%);
+
+    .see-more {
+        display: none;
+    }
+
+    &:hover {
+        background-color: hsl(0, 100%, 61%);
+
+        .see-more {
+            display: inherit;
+        }
+
+        .card-title {
+            display: none;
+        }
+    }
 }
 
 #conversation-card {
-    background-color: #D252FF42;
+    background-color: hsla(284, 100%, 66%, 0.259);
 }
 
 #conversation-text {
-    background-color: #D252FF;
+    background-color: hsl(284, 100%, 66%);
+
+    .see-more {
+        display: none;
+    }
+
+    &:hover {
+        background-color: hsl(284, 100%, 46%);
+
+        .see-more {
+            display: inherit;
+        }
+
+        .card-title {
+            display: none;
+        }
+    }
 }
 
 #grammar-card {
-    background-color: #1cb51942;
+    background-color: hsla(119, 76%, 40%, 0.259);
 }
 
 #grammar-text {
-    background-color: #1cb519;
+    background-color: hsl(119, 76%, 40%);
+
+    .see-more {
+        display: none;
+    }
+
+    &:hover {
+        background-color: hsl(119, 76%, 30%);
+
+        .see-more {
+            display: inherit;
+        }
+
+        .card-title {
+            display: none;
+        }
+    }
 }
 
 #vocabulary-card {
-    background-color: #FFA14942;
+    background-color: hsla(29, 100%, 64%, 0.259);
 }
 
 #vocabulary-text {
-    background-color: #FFA149;
+    background-color: hsl(29, 100%, 64%);
+
+    .see-more {
+        display: none;
+    }
+
+    &:hover {
+        background-color: hsl(29, 100%, 44%);
+
+        .see-more {
+            display: inherit;
+        }
+
+        .card-title {
+            display: none;
+        }
+    }
 }

@@ -1,0 +1,208 @@
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+.modal-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 15px;
+    width: 90vw;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+
+    @media (min-width: 1290px) {
+        max-width: 35vw;
+    }
+
+    p {
+        display:none;
+
+        @media (min-width: 500px) {
+            display: inherit;
+            padding: 2rem;
+        }
+    }
+
+    h3 {
+        padding: 2rem 2rem 0rem 2rem;
+        font-size: 1.75rem;
+        font-family: "Gochi", sans-serif;
+
+    }
+
+    h4 {
+        display:none;
+        padding: 0rem 2rem;
+        font-family: "Gochi", sans-serif;
+        font-size: 1.5rem;
+        
+        @media (min-width: 500px) {
+            display: inherit;
+            padding: 2rem;
+        }
+        
+    }
+
+    ul {
+        padding: 2rem;
+        list-style-type: square;
+    }
+
+    
+    img {
+        display: none;
+        @media (min-width: 500px) {
+            display: inherit;
+            width: 150px;
+        }
+    }
+}
+
+
+#reading-content {
+    background-color: hsl(176, 56%, 90%);
+
+    h3 {
+        color: hsl(176, 56%, 30%);
+    }
+    h4 {
+        color: hsl(176, 56%, 30%);
+    }
+    p {
+        color: hsl(176, 56%, 20%);
+    }
+    ul {
+        color: hsl(176, 56%, 20%);
+    }
+}
+
+#writing-content {
+    background-color: hsl(50, 100%, 90%);
+    h3 {
+        color: hsl(50, 100%, 40%);
+    }
+    h4 {
+        color: hsl(50, 100%, 40%);
+    }
+    p {
+        color: hsl(50, 100%, 20%);
+    }
+    ul {
+        color: hsl(50, 100%, 20%);
+    }
+}
+
+#listening-content {
+    background-color: hsl(0, 100%, 90%);
+    h3 {
+        color: hsl(0, 100%, 30%);
+    }
+    h4 {
+        color: hsl(0, 100%, 30%);
+    }
+    p {
+        color: hsl(0, 100%, 20%);
+    }
+    ul {
+        color: hsl(0, 100%, 20%);
+    }
+}
+
+#conversation-content {
+    background-color: hsl(284, 100%, 90%);
+    h3 {
+        color: hsl(284, 100%, 30%);
+    }
+    h4 {
+        color: hsl(284, 100%, 30%);;
+    }
+    p {
+        color: hsl(284, 100%, 20%);
+    }
+    ul {
+        color: hsl(284, 100%, 20%);
+    }
+}
+
+#grammar-content {
+    background-color: hsl(119, 76%, 90%);
+    h3 {
+        color: hsl(119, 76%, 30%);
+    }
+    h4 {
+        color: hsl(119, 76%, 30%);
+    }
+    p {
+        color: hsl(119, 76%, 20%);
+    }
+    ul {
+        color: hsl(119, 76%, 20%);
+    }
+}
+
+#vocabulary-content {
+    background-color: hsl(29, 100%, 90%);
+    h3 {
+        color: hsl(29, 100%, 30%);
+    }
+    h4 {
+        color: hsl(29, 100%, 30%);
+    }
+    p {
+        color: hsl(29, 100%, 20%);
+    }
+    ul {
+        color: hsl(29, 100%, 20%);
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: 300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

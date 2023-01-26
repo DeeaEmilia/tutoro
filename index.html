@@ -73,43 +73,235 @@
 
             <section class="curriculum" id="curriculum">
                 <h2>What you'll learn</h2>
+
+                <!-- Reading -->
                 <div class="learning-container grid">
                     <div class="learning-card" id="reading-card">
                         <div class="image-card">
                             <img src="assets/Reading.png" alt="reading">
                         </div>
-                        <h3 id="reading-text">Reading</h3>
+                        <div id="reading-modal" class="modal">
+                            <div class="modal-content" id="reading-content">
+                                <img src="assets/Reading.png" alt="reading">
+                                <div class="container">
+                                    <span class="close" id="reading-close">&times;</span>
+                                    <h3>Reading</h3>
+                                    <p>Reading is an important aspect of language learning because it helps to improve
+                                        vocabulary, grammar, and comprehension. By reading texts written in the target
+                                        language, learners are exposed to a variety of sentence structures and
+                                        vocabulary
+                                        words that they may not encounter in conversation. Additionally, reading allows
+                                        learners to gain a deeper understanding of the culture and context of the
+                                        language
+                                        they are learning. Furthermore, it is also a great way to practice and improve
+                                        reading comprehension, which can be challenging when learning a new language.
+                                    </p>
+                                    <h4>What we will do together:</h4>
+                                    <ul>
+                                        <li>Assign reading materials at the student's level, such as short stories,
+                                            articles, or news articles, that are interesting and relevant to them.</li>
+                                        <li>Ask the student comprehension questions about the text to check their
+                                            understanding.</li>
+                                        <li>Have the student summarize the text or retell it in their own words.</li>
+                                        <li>Encourage the student to look up words they don't know and add them to their
+                                            vocabulary list.</li>
+                                        <li>Have the student read aloud to practice pronunciation and intonation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="reading-text">
+                            <span class="card-title">Reading</span> 
+                            <span class="see-more">See more...</span>
+                        </button>
                     </div>
 
+                    <!-- Writing -->
                     <div class="learning-card" id="writing-card">
                         <div class="image-card">
                             <img src="assets/Writing.png" alt="writing">
                         </div>
-                        <h3 id="writing-text">Writing</h3>
+                        <div id="writing-modal" class="modal">
+                            <div class="modal-content" id="writing-content">
+                                <img src="assets/Writing.png" alt="writing">
+                                <div class="container">
+                                    <span class="close" id="writing-close">&times;</span>
+                                    <h3>Writing</h3>
+                                    <p>Writing is a crucial element of language learning because it helps learners to
+                                        practice their grammar and vocabulary in a more formal setting. Writing essays,
+                                        emails, or even journal entries in the target language allows learners to focus
+                                        on
+                                        grammar rules and sentence structure. Additionally, writing can help learners to
+                                        improve their spelling and punctuation, as well as their ability to express
+                                        themselves clearly and effectively in the language they are learning.</p>
+                                    <h4>What we will do together:</h4>
+                                    <ul>
+                                        <li>Assign writing tasks such as composing emails, writing a short story or an
+                                            essay, or keeping a journal in the target language.</li>
+                                        <li>Review the student's writing and provide feedback on grammar, vocabulary,
+                                            and
+                                            sentence structure.</li>
+                                        <li>Encourage the student to use online resources such as grammar checkers or
+                                            writing guides to improve their writing skills.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="writing-text">
+                            <span class="card-title">Writing</span> 
+                            <span class="see-more">See more...</span>
+                        </button>
                     </div>
+
+                    <!-- Listening -->
                     <div class="learning-card" id="listening-card">
                         <div class="image-card">
                             <img src="assets/Listening.png" alt="listening">
                         </div>
-                        <h3 id="listening-text">Listening</h3>
+                        <div id="listening-modal" class="modal">
+                            <div class="modal-content" id="listening-content">
+                                <img src="assets/Listening.png" alt="listening">
+                                <div class="container">
+                                    <span class="close" id="listening-close">&times;</span>
+                                    <h3>Listening</h3>
+                                    <p>Listening is an essential skill for language learners because it helps them to
+                                        understand spoken language in real-world situations. By listening to native
+                                        speakers, learners can improve their comprehension and pronunciation.
+                                        Additionally,
+                                        listening to music, podcasts, and audio books in the target language can help
+                                        learners to become more familiar with the rhythm and intonation of the language.
+                                    </p>
+                                    <h4>What we will do together:</h4>
+                                    <ul>
+                                        <li>Play audio recordings or videos in the target language, such as podcasts,
+                                            music, or news broadcasts.</li>
+                                        <li>Ask the student comprehension questions about what they heard and have them
+                                            retell the main points.</li>
+                                        <li>Encourage the student to listen to native speakers and notice the
+                                            intonation, rhythm and stress, and also to use listening exercises and
+                                            dictations.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="listening-text">
+                            <span class="card-title">Listening</span> 
+                            <span class="see-more">See more...</span>
+                        </button>
                     </div>
+
+                    <!-- Conversation -->
                     <div class="learning-card" id="conversation-card">
                         <div class="image-card">
                             <img src="assets/Conversation.png" alt="conversation">
                         </div>
-                        <h3 id="conversation-text">Conversation</h3>
+                        <div id="conversation-modal" class="modal">
+                            <div class="modal-content" id="conversation-content">
+                                <img src="assets/Conversation.png" alt="conversation">
+                                <div class="container">
+                                    <span class="close" id="conversation-close">&times;</span>
+                                    <h3>Conversation</h3>
+                                    <p>Conversation is a key element of language learning because it allows learners to
+                                        practice their speaking skills in a real-world setting. By engaging in
+                                        conversation
+                                        with native speakers, learners can improve their pronunciation, fluency, and
+                                        confidence in the language they are learning. Additionally, conversation allows
+                                        learners to learn idiomatic expressions and colloquial language that is not
+                                        typically taught in a classroom setting.</p>
+                                    <h4>What we will do together:</h4>
+                                    <ul>
+                                        <li>Encourage the student to engage in conversations with native speakers,
+                                            either in person or through online language exchange platforms.</li>
+                                        <li>Provide the student with conversation prompts and questions to help them
+                                            practice speaking.</li>
+                                        <li>Correct the student's mistakes in grammar, vocabulary and pronunciation
+                                            during our conversation sessions.</li>
+                                        <li>Provide the student with opportunities to practice idiomatic expressions and
+                                            colloquial language</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="conversation-text">
+                            <span class="card-title">Conversation</span> 
+                            <span class="see-more">See more...</span>
+                        </button>
                     </div>
+
+                    <!-- Grammar -->
                     <div class="learning-card" id="grammar-card">
                         <div class="image-card">
                             <img src="assets/Grammar.png" alt="grammar">
                         </div>
-                        <h3 id="grammar-text">Grammar</h3>
+                        <div id="grammar-modal" class="modal">
+                            <div class="modal-content" id="grammar-content">
+                                <img src="assets/Grammar.png" alt="grammar">
+                                <div class="container">
+                                    <span class="close" id="grammar-close">&times;</span>
+                                    <h3>Grammar</h3>
+                                    <p>Grammar is an important element of language learning because it helps learners to
+                                        understand how sentences are constructed and how words relate to each other. By
+                                        studying grammar, learners can improve their ability to form correct sentences,
+                                        understand the meaning of text, and communicate effectively. Additionally,
+                                        understanding grammar rules can help learners to avoid common mistakes and sound
+                                        more like native speakers.</p>
+                                    <h4>What we will do together:</h4>
+                                    <ul>
+                                        <li>Provide the student with grammar exercises, such as fill-in-the-blank,
+                                            multiple-choice, or matching exercises.</li>
+                                        <li>Review the student's work and provide feedback on grammar and sentence
+                                            structure.</li>
+                                        <li>Encourage the student to use online resources such as grammar guides to
+                                            improve their understanding of grammar rules.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="grammar-text">
+                            <span class="card-title">Grammar</span> 
+                            <span class="see-more">See more...</span>
+                        </button>
                     </div>
+
+                    <!-- Vocabulary -->
                     <div class="learning-card" id="vocabulary-card">
                         <div class="image-card">
                             <img src="assets/Vocabulary.png" alt="vocabulary">
                         </div>
-                        <h3 id="vocabulary-text">Vocabulary</h3>
+                        <div id="vocabulary-modal" class="modal">
+                            <div class="modal-content" id="vocabulary-content">
+                                <img src="assets/Vocabulary.png" alt="vocabulary">
+                                <div class="container">
+                                    <span class="close" id="vocabulary-close">&times;</span>
+                                    <h3>Vocabulary</h3>
+                                    <p>Vocabulary is a fundamental element of language learning because it enables
+                                        learners
+                                        to understand and express themselves in the target language. By studying
+                                        vocabulary,
+                                        learners can improve their reading comprehension, writing skills, and speaking
+                                        fluency. Additionally, building a strong vocabulary allows learners to
+                                        communicate
+                                        more effectively and understand more complex texts. Furthermore, learning
+                                        vocabulary
+                                        in context, using images and mnemonics can help learners to retain words more
+                                        effectively.</p>
+                                    <h4>What we will do together:</h4>
+                                    <ul>
+                                        <li>Provide the student with a list of vocabulary words that are relevant and
+                                            interesting to them.</li>
+                                        <li>Encourage the student to use flashcards, mnemonics, and other memory aids to
+                                            help them learn new words.</li>
+                                        <li>Test the student on their vocabulary regularly to track their progress.</li>
+                                        <li>Encourage the student to use the new words in context, such as in writing or
+                                            conversation.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="vocabulary-text" onclick="show()">
+                            <span class="card-title">Vocabulary</span> 
+                            <span class="see-more">See more...</span>
+                        </button>
                     </div>
                 </div>
 
