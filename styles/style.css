@@ -104,13 +104,13 @@ button {
 }
 
 #reading-text {
-  background-color: hsl(176deg, 56%, 55%);
+  background-color: hsl(176deg, 56%, 60%);
 }
 #reading-text .see-more {
   display: none;
 }
 #reading-text:hover {
-  background-color: hsl(176deg, 56%, 45%);
+  background-color: hsl(176deg, 56%, 80%);
 }
 #reading-text:hover .see-more {
   display: inherit;
@@ -124,13 +124,13 @@ button {
 }
 
 #writing-text {
-  background-color: hsl(50deg, 100%, 71%);
+  background-color: hsl(50deg, 100%, 60%);
 }
 #writing-text .see-more {
   display: none;
 }
 #writing-text:hover {
-  background-color: hsl(50deg, 100%, 51%);
+  background-color: hsl(50deg, 100%, 80%);
 }
 #writing-text:hover .see-more {
   display: inherit;
@@ -144,13 +144,13 @@ button {
 }
 
 #listening-text {
-  background-color: hsl(0deg, 100%, 71%);
+  background-color: hsl(0deg, 100%, 70%);
 }
 #listening-text .see-more {
   display: none;
 }
 #listening-text:hover {
-  background-color: hsl(0deg, 100%, 61%);
+  background-color: hsl(0deg, 100%, 80%);
 }
 #listening-text:hover .see-more {
   display: inherit;
@@ -164,13 +164,13 @@ button {
 }
 
 #conversation-text {
-  background-color: hsl(284deg, 100%, 66%);
+  background-color: hsl(284deg, 100%, 60%);
 }
 #conversation-text .see-more {
   display: none;
 }
 #conversation-text:hover {
-  background-color: hsl(284deg, 100%, 46%);
+  background-color: hsl(284deg, 100%, 80%);
 }
 #conversation-text:hover .see-more {
   display: inherit;
@@ -190,7 +190,7 @@ button {
   display: none;
 }
 #grammar-text:hover {
-  background-color: hsl(119deg, 76%, 30%);
+  background-color: hsl(119deg, 76%, 60%);
 }
 #grammar-text:hover .see-more {
   display: inherit;
@@ -204,13 +204,13 @@ button {
 }
 
 #vocabulary-text {
-  background-color: hsl(29deg, 100%, 64%);
+  background-color: hsl(29deg, 100%, 60%);
 }
 #vocabulary-text .see-more {
   display: none;
 }
 #vocabulary-text:hover {
-  background-color: hsl(29deg, 100%, 44%);
+  background-color: hsl(29deg, 100%, 80%);
 }
 #vocabulary-text:hover .see-more {
   display: inherit;

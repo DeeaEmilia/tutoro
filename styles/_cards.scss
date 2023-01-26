@@ -3,14 +3,14 @@
 }
 
 #reading-text {
-    background-color: hsl(176, 56%, 55%);
+    background-color: hsl(176, 56%, 60%);
 
     .see-more {
         display: none;
     }
 
     &:hover {
-        background-color: hsl(176, 56%, 45%);
+        background-color: hsl(176, 56%, 80%);
 
         .see-more {
             display: inherit;
@@ -27,14 +27,14 @@
 }
 
 #writing-text {
-    background-color: hsl(50, 100%, 71%);
+    background-color: hsl(50, 100%, 60%);
 
     .see-more {
         display: none;
     }
 
     &:hover {
-        background-color: hsl(50, 100%, 51%);
+        background-color: hsl(50, 100%, 80%);
 
         .see-more {
             display: inherit;
@@ -51,14 +51,14 @@
 }
 
 #listening-text {
-    background-color: hsl(0, 100%, 71%);
+    background-color: hsl(0, 100%, 70%);
 
     .see-more {
         display: none;
     }
 
     &:hover {
-        background-color: hsl(0, 100%, 61%);
+        background-color: hsl(0, 100%, 80%);
 
         .see-more {
             display: inherit;
@@ -75,14 +75,14 @@
 }
 
 #conversation-text {
-    background-color: hsl(284, 100%, 66%);
+    background-color: hsl(284, 100%, 60%);
 
     .see-more {
         display: none;
     }
 
     &:hover {
-        background-color: hsl(284, 100%, 46%);
+        background-color: hsl(284, 100%, 80%);
 
         .see-more {
             display: inherit;
@@ -106,7 +106,7 @@
     }
 
     &:hover {
-        background-color: hsl(119, 76%, 30%);
+        background-color: hsl(119, 76%, 60%);
 
         .see-more {
             display: inherit;
@@ -123,14 +123,14 @@
 }
 
 #vocabulary-text {
-    background-color: hsl(29, 100%, 64%);
+    background-color: hsl(29, 100%, 60%);
 
     .see-more {
         display: none;
     }
 
     &:hover {
-        background-color: hsl(29, 100%, 44%);
+        background-color: hsl(29, 100%, 80%);
 
         .see-more {
             display: inherit;
